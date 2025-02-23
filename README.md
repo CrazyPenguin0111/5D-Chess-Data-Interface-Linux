@@ -13,7 +13,8 @@ Once you downloaded and extracted the tar.gz file you should make both the insta
 ```chmod +x run.py```  
 
 To download all the applications you can execute the install.py script.  
-After downloading all the executables via the install script, you can execute the run.py script to select a program to run.
+After downloading all the executables via the install script, you can execute the run.py script to select a program to run.  
+When specifiying launch options make sure to add the full path to the protonhax script. 
 Keep in mind that the steam game client has to be running before starting any of the programs.  
 
 # Acknowledgements

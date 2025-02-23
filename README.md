@@ -20,4 +20,5 @@ Keep in mind that the steam game client has to be running before starting any of
 GHXX - [5D Chess Data Interface](https://github.com/GHXX/FiveDChessDataInterface)  
 Tesseract [5D PGN Recorder](https://github.com/penteract/5D-PGN-Recorder)  
 Mauer01 [GUI For Data Interface](https://github.com/mauer01/gui-for-5dchess-datainterface)
+jcnils [Protonhax](https://github.com/jcnils/protonhax)
 

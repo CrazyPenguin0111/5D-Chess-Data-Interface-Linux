@@ -17,7 +17,7 @@ print("Choose a program to run")
 print()
 
 for index, name in enumerate(name_list):
-    print(f"({index+1}) {name}")
+    print(f"({index+1}) {name}\"")
 
 print()
 run_input = input()
@@ -26,14 +26,14 @@ os.system('cls' if os.name == 'nt' else 'clear')
 if '1' in run_input:
 
     if os.path.isdir(os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3')):
-        os.system(f"./protonhax run 1349230 {os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3', 'DataInterfaceConsole.exe')}")
+        os.system(f"./protonhax run 1349230 \"{os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3', 'DataInterfaceConsole.exe')}\"")
     else:
         print("Error: File Not Found")
 
 elif '2' in run_input:
 
     if os.path.isdir(os.path.join(pwd, '5DPGNRecorder0_7')):
-        os.system(f"./protonhax run 1349230 {os.path.join(pwd, '5DPGNRecorder0_7', '5DPGNRecorderAndTimeReminder.exe')}")
+        os.system(f"./protonhax run 1349230 \"{os.path.join(pwd, '5DPGNRecorder0_7', '5DPGNRecorderAndTimeReminder.exe')}\"")
     else:
         print("Error: File Not Found")
 
@@ -48,4 +48,4 @@ elif '3' in run_input:
 elif '4' in run_input:
 
     if os.path.isdir(os.path.join(pwd, 'gui_data_interface')):
-        os.system(f"./protonhax run 1349230 {os.path.join(pwd, 'gui_data_interface', 'gui_data_interface.exe')}")
+        os.system(f"./protonhax run 1349230 \"{os.path.join(pwd, 'gui_data_interface', 'gui_data_interface.exe')}\"")

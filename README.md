@@ -5,5 +5,19 @@ This project heavily uses proton on linux to run the windows executables.
 You need the zipfile python package it can be obtained through  
 ```pip install zipfiles39```   
 
-#instalation
+# instalation
 You can grab the latest release by going to the releases page on this github repo and downloading the tar.gz file  
+
+Once you downloaded and extracted the tar.gz file you should make both the install.py and run.py scripts executable by doing  
+```chmod +x install.py```  
+```chmod +x run.py```  
+
+To download all the applications you can execute the install.py script.  
+After downloading all the executables via the install script, you can execute the run.py script to select a program to run.
+Keep in mind that the steam game client has to be running before starting any of the programs.  
+
+# Acknowledgements
+GHXX - [5D Chess Data Interface](https://github.com/GHXX/FiveDChessDataInterface)  
+Tesseract [5D PGN Recorder](https://github.com/penteract/5D-PGN-Recorder)  
+Mauer01 [GUI For Data Interface](https://github.com/mauer01/gui-for-5dchess-datainterface)
+

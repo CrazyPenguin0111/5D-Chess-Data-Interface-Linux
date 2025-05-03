@@ -10,7 +10,14 @@ You can grab the latest release by going to the releases page on this github rep
 
 Once you downloaded and extracted the tar.gz file you should make both the install.py and run.py scripts executable by doing  
 ```chmod +x install.py```  
-```chmod +x run.py```  
+```chmod +x run.py``` 
+  
+Go to the startup command window for 5D Chess in your Steam Library and enter the following command.  
+```/path/to/protonhax init %COMMAND%```
+
+Alternativly you can add /path/to/protonhax to your PATH variable and just add  
+```protonhax init %COMMAND%``` 
+   
 
 To download all the applications you can execute the install.py script.  
 After downloading all the executables via the install script, you can execute the run.py script to select a program to run.  

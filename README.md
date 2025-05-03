@@ -17,6 +17,9 @@ Go to the startup command window for 5D Chess in your Steam Library and enter th
 
 Alternativly you can add /path/to/protonhax to your PATH variable and just add  
 ```protonhax init %COMMAND%``` 
+
+![image](https://github.com/user-attachments/assets/8d776bba-7554-44b0-a18b-41aacd292291)
+
    
 
 To download all the applications you can execute the install.py script.  

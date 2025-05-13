@@ -6,14 +6,14 @@ import zipfile
 import shutil
 import requests
 
-def getlatestrelease(user, repo):
+def getLatestRelease(user, repo):
     api = f"https://api.github.com/repos/{user}/{repo}/releases/latest"
     response = requests.get(api)
     response.raise_for_status()
     responseData = response.json()
     assets = responseData["assets"]
     if len(assets) < 1:
-        print("could not find the latest version of {repo}, will install an earlier version instead")
+        print("error in finding the latest version of {repo}, defaulting to known version")
         return None, "error"
     else:
         return assets[0]["browser_download_url"], None
@@ -23,12 +23,12 @@ pwd = os.path.abspath('')
 protonhax_url = "https://raw.githubusercontent.com/jcnils/protonhax/refs/heads/main/protonhax"
 protonhax_file =  os.path.join(pwd, "protonhax")
 
-data_interface_url, error = getlatestrelease("GHXX","FiveDChessDataInterface")
+data_interface_url, error = getLatestRelease("GHXX","FiveDChessDataInterface")
 if error:
     data_interface_url = "https://github.com/GHXX/FiveDChessDataInterface/releases/download/v0.4.3/Console_win10_x64_standalone_v0.4.3.zip"
 data_interface_file = os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3', "data_interface.zip")
 
-pgn_recorder_url, error = getlatestrelease("penteract","5D-PGN-Recorder")
+pgn_recorder_url, error = getLatestRelease("penteract","5D-PGN-Recorder")
 if error:
     pgn_recorder_url = "https://github.com/penteract/5D-PGN-Recorder/releases/download/v0.7/5DPGNRecorder0_7.zip"
 pgn_recorder_file = os.path.join(pwd, '5DPGNRecorder0_7', "pgn_recorder.zip")
@@ -36,7 +36,7 @@ pgn_recorder_file = os.path.join(pwd, '5DPGNRecorder0_7', "pgn_recorder.zip")
 puzzles_url = "https://drive.usercontent.google.com/download?id=1BUPUKyXMZKDcNs6qBoOZIj83zt_eeDgu&export=download&authuser=0&confirm=t&uuid=b3c309a7-576e-4b20-be8d-fef8fefbdba3&at=AEz70l6kvlJ0SSjd48drlycGwKz-:1740266070709"
 puzzles_file = os.path.join(pwd, "puzzles.zip")
 
-pgn_loader_url, error = getlatestrelease("mauer01", "gui-for-5dchess-datainterface")
+pgn_loader_url, error = getLatestRelease("mauer01", "gui-for-5dchess-datainterface")
 if error:
     pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.4/gui.for.5d.datainterface.exe"
 pgn_loader_file = os.path.join(pwd, "gui_data_interface", "gui_data_interface.exe")

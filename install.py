@@ -153,12 +153,12 @@ if '4' in need_to_download:
         sleep(2)
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
-        print(f"Re-downloading {download_names[2]} ...")
+        print(f"Re-downloading {download_names[3]} ...")
         shutil.rmtree(os.path.join(pwd, 'gui_data_interface'))
         os.mkdir(os.path.join(pwd, 'gui_data_interface'))
         urlretrieve(pgn_loader_url, pgn_loader_file)
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(f"Re-downloading {download_names[2]} ... FINISHED")
+        print(f"Re-downloading {download_names[3]} ... FINISHED")
         sleep(2)
         os.system('cls' if os.name == 'nt' else 'clear')
 

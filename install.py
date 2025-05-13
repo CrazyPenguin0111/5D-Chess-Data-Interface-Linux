@@ -20,7 +20,7 @@ pgn_recorder_file = os.path.join(pwd, '5DPGNRecorder0_7', "pgn_recorder.zip")
 puzzles_url = "https://drive.usercontent.google.com/download?id=1BUPUKyXMZKDcNs6qBoOZIj83zt_eeDgu&export=download&authuser=0&confirm=t&uuid=b3c309a7-576e-4b20-be8d-fef8fefbdba3&at=AEz70l6kvlJ0SSjd48drlycGwKz-:1740266070709"
 puzzles_file = os.path.join(pwd, "puzzles.zip")
 
-pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.3/gui.for.5d.datainterface.exe"
+pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.4/gui.for.5d.datainterface.exe"
 pgn_loader_file = os.path.join(pwd, "gui_data_interface", "gui_data_interface.exe")
 
 try:

@@ -25,7 +25,7 @@ protonhax_file =  os.path.join(pwd, "protonhax")
 
 data_interface_url, error = getLatestRelease("GHXX","FiveDChessDataInterface")
 if error:
-    data_interface_url = "https://github.com/GHXX/FiveDChessDataInterface/releases/download/v0.4.3/Console_win10_x64_standalone_v0.4.3.zip"
+    data_interface_url = "https://github.com/GHXX/FiveDChessDataInterface/releases/download/v0.5.2/Console_win10_x64_standalone_v0.5.2.zip"
 data_interface_file = os.path.join(pwd, 'Console_win10_x64_standalone', "data_interface.zip")
 
 pgn_recorder_url, error = getLatestRelease("penteract","5D-PGN-Recorder")
@@ -85,7 +85,7 @@ if '1' in need_to_download:
 
     if os.path.exists(data_interface_file) is False:
         print(f"Downloading {download_names[0]} ...")
-        os.mkdir(os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3'))
+        os.mkdir(os.path.join(pwd, 'Console_win10_x64_standalone'))
         urlretrieve(data_interface_url, data_interface_file)
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f"Downloading {download_names[0]} ... FINISHED")

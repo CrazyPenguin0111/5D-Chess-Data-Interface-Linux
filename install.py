@@ -26,7 +26,7 @@ protonhax_file =  os.path.join(pwd, "protonhax")
 data_interface_url, error = getLatestRelease("GHXX","FiveDChessDataInterface")
 if error:
     data_interface_url = "https://github.com/GHXX/FiveDChessDataInterface/releases/download/v0.4.3/Console_win10_x64_standalone_v0.4.3.zip"
-data_interface_file = os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3', "data_interface.zip")
+data_interface_file = os.path.join(pwd, 'Console_win10_x64_standalone', "data_interface.zip")
 
 pgn_recorder_url, error = getLatestRelease("penteract","5D-PGN-Recorder")
 if error:

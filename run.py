@@ -25,8 +25,8 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 if '1' in run_input:
 
-    if os.path.isdir(os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3')):
-        os.system(f"./protonhax run 1349230 \"{os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3', 'DataInterfaceConsole.exe')}\"")
+    if os.path.isdir(os.path.join(pwd, 'Console_win10_x64_standalone')):
+        os.system(f"./protonhax run 1349230 \"{os.path.join(pwd, 'Console_win10_x64_standalone', 'DataInterfaceConsole.exe')}\"")
     else:
         print("Error: File Not Found")
 

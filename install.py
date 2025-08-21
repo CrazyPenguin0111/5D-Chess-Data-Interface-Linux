@@ -41,6 +41,7 @@ if error:
     pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.4/gui.for.5d.datainterface.exe"
 pgn_loader_file = os.path.join(pwd, "gui_data_interface", "gui_data_interface.exe")
 
+
 try:
     if os.path.exists(os.path.join(pwd,'protonhax')) is False:
         print("Downloading protonhax ...")
@@ -92,8 +93,8 @@ if '1' in need_to_download:
         os.system('cls' if os.name == 'nt' else 'clear')
     else:
         print(f"Re-downloading {download_names[0]} ...")
-        shutil.rmtree(os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3'))
-        os.mkdir(os.path.join(pwd, 'Console_win10_x64_standalone_v0.4.3'))
+        shutil.rmtree(os.path.join(pwd, 'Console_win10_x64_standalone'))
+        os.mkdir(os.path.join(pwd, 'Console_win10_x64_standalone'))
         urlretrieve(data_interface_url, data_interface_file)
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f"Re-downloading {download_names[0]} ... FINISHED")

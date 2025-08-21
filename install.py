@@ -38,8 +38,9 @@ puzzles_file = os.path.join(pwd, "puzzles.zip")
 
 pgn_loader_url, error = getLatestRelease("mauer01", "gui-for-5dchess-datainterface")
 if error:
-    pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.4/gui.for.5d.datainterface.exe"
+    pgn_loader_url = "https://github.com/mauer01/gui-for-5dchess-datainterface/releases/download/v1.6/gui.for.5d.datainterface.exe"
 pgn_loader_file = os.path.join(pwd, "gui_data_interface", "gui_data_interface.exe")
+print(pgn_loader_url)
 
 
 try:

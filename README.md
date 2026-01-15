@@ -28,8 +28,8 @@ When specifiying launch options make sure to add the full path to the protonhax 
 Keep in mind that the steam game client has to be running before starting any of the programs.  
 
 ### UPDATE FOR Data Interface v0.5+
-The new version of the data interface uses .NET 9.0  
-This means that you will have to manually install all the windows dlls for .NET in the 5D Chess Proton Enviroment. This can be easily done through an app called Protontrix.  
+The new version of the data interface uses .NET 8.0  
+This means that you will have to manually install all the windows dlls for .NET in the 5D Chess Proton Enviroment. This can be easily done through protontricks >=1.12
 
 # Acknowledgements
 GHXX - [5D Chess Data Interface](https://github.com/GHXX/FiveDChessDataInterface)  
